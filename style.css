@@ -1,0 +1,162 @@
+:root{
+    --Darkcyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Verydarkblue: hsl(212, 21%, 14%);
+--Darkgrayishblue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color:    hsl(30, 38%, 92%);
+}
+.container{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 250px auto;
+}
+
+.leftbox img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height:fit-content;
+    width:  425px;
+   position: relative;
+   top: 10px;
+}
+.rightbox{
+   
+    color: gray;
+    width: 375px ;
+    height:400px;
+    background-color: white;
+    padding: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 14px;
+   
+}
+.rightbox h4{
+ letter-spacing: 6px;
+}
+.rightbox h3{
+    font-size:2.5rem ;
+    
+    color: var(--Verydarkblue);
+    font-family: 'Fraunces', sans-serif;
+    position: relative;
+    bottom: 30px;
+} 
+.rightbox P{
+    font-size: 1rem;
+    position: relative;
+    bottom: 60px;
+    line-height: 1.5rem;
+
+}
+.rate{
+    margin-top: 40px;
+    color:var(--Darkcyan);
+    font-family: 'Fraunces', sans-serif;
+    position: relative;
+    bottom: 70px;
+
+}
+.rate h1{
+font-size: 2.5rem;
+}
+.rate p{
+    color:var(--Darkgrayishblue);
+    position: relative;
+    bottom: 62px;
+    left: 174px;
+    text-decoration:line-through;
+    
+}
+.rightbox button{
+    background-color: var(--Darkcyan);
+    width:370px ;
+    height: 60px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--White);
+    border: 1px solid var(--Darkcyan);
+    border-radius: 10px;
+    position: relative;
+    bottom: 35px;
+    left: 3px;
+    
+   
+    
+}
+.rightbox img{
+    margin-right:  10px; 
+    position: relative;
+    top: 3px;
+}
+.rightbox button:hover{
+    background-color: hsl(158, 62%, 21%);
+}
+/* Desktop styles */
+@media (min-width: 1024px){
+    body {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        background-color:   var(--Cream);
+    }
+    .container{
+        
+        max-width:1044px ;
+        max-height: 1440px;
+        display: flex;
+        flex-direction: row;
+      
+        margin: 250px auto;
+    }
+    .leftbox{
+        width:370px ;
+        height: 560px;
+    content: url(images/image-product-desktop.jpg);
+ border-bottom-left-radius: 15px;
+ border-top-left-radius: 15px;
+}
+.rightbox{
+    width:300px ;
+    height: 504px;
+    border-bottom-right-radius: 15px;
+ border-top-right-radius: 15px;
+padding: 2em 2.5em 2em;
+}
+.rightbox h3{
+margin: 60px 0px 60px;
+line-height: 42px;
+}
+.rightbox button{
+    background-color: var(--Darkcyan);
+    width:290px ;
+    height: 55px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--White);
+    border: 1px solid var(--Darkcyan);
+    border-radius: 10px;
+    position: relative;
+    
+    
+    
+}
+.rightbox p{
+    font-size:18px;
+    
+}
+
+}
+  
+  
